@@ -129,22 +129,22 @@ header nav ul li a:hover {
 }
 
 .img-title h3{
-  position:absolute;
-  bottom: 258px;
-  left: 20px;
+  position:relative;
+  bottom: 70px;
+  left: 209px;
   font-weight: bold;
   padding:8px 10px 3px 50px;
   font-size: 14px;
   color: black;
   background-color: #92cccd;
   text-decoration:none;
-  width: 140px;
+  width: 200px;
 }
 
 .img-title h4{
-  position:absolute;
-  bottom: 250px;
-  left: 20px;
+  position:relative;
+  bottom: 70px;
+  left: 209px;
   align-items:center;
   font-weight: bold;
   padding:0px 10px 0px 50px;
@@ -152,7 +152,7 @@ header nav ul li a:hover {
   color: black;
   background-color: #92cccd;
   text-decoration:none;
-  width:140px;
+  width:200px;
 }
 
 #contact-me-info li{
