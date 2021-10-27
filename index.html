@@ -1,136 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Awiebe portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>responsive personal portfolio</title>
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- navigation tags - block level element -->
-    <header>
-      <h1>
-        <a href="/">Aaron Wiebe</a>
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-          <li>
-            <a href="./assets/file/Resume-Aaron-Wiebe.pdf">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- end navigation -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+<!-- header section starts  -->
 
-    <!-- picture header -->
-    <section class="hero">
-      <div class="hero-cta">
-        <img src="assets/images/business4.jpg" Alt="business headshot of aw">
-       </div>
-    </section>
-    <!-- end header -->
+<header>
 
-    <!-- body content-->
-    <section id="me">
-      <div id="about-me" class="container">
-        <div class= "side-title">
-          <h2>
-            About<br>
-            Me
-          </h2>
-        </div>
-        <div id="about-me-info" class="info">
-          <p>
-            Experienced Software Engineer with a demonstrated history of working in the aerospace, facility management, and construction industries. Skilled in HTML/CSS/JavaScript, Visual Studio C++ and C#, Borland Delphi, AutoCAD, LISP. Strong engineering professional with experience in developement, troubleshooting, and testing.
-          </p>
-        </div>
+  <div class="user">
+      <img src="images/pic.jpg" alt="">
+      <h3 class="name">Aaron Wiebe</h3>
+      <p class="post">Full Stack Developer</p>
+  </div>
+
+  <nav class="navbar">
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fa fa-facebook-square fa-4x fa-inverse" aria-hidden="true"></i>
+      <i class="fa fa-github-square fa-4x fa-inverse" aria-hidden="true"></i> 
+      <i class="fa fa-linkedin-square fa-4x fa-inverse" aria-hidden="true"></i> 
+      <i class="fa fa-stack-overflow fa-4x fa-inverse" aria-hidden="true"></i> 
+  
+  </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+  <h3>HI THERE !</h3>
+  <h1>I'M <span>Aaron Wiebe</span></h1>
+  <p>A business analyst who analyzes and documents the market environment, processes, or systems of businesses. I help businesses improve their processes, products, services, and software through data analysis and software development.
+  </p>
+  <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>about</span> me </h1>
+
+<div class="row">
+
+  <div class="info">
+      <h3> <span> Name : </span> Aaron Wiebe </h3>
+      <h3> <span> Age : </span> 57 </h3>
+<!-- <h3> <span> qualification : </span> BMS </h3> -->
+      <h3> <span> Post : </span> Full Stack Developer / IT Business Analyst </h3>
+      <h3> <span> Technologies : </span> C++, AutoCAD, LISP, Borland Delphi
+        Agile development, HTML, CSS, Git, APIs, JSON, AJAX, JavaScript, JQuery, MERN</h3>
+<!--       <a href="#"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a> -->
+  </div>
+
+  <div class="counter">
+
+      <div class="box">
+          <span>40+</span>
+          <h3>years of computer tech experience</h3>
       </div>
-    </section>
-    <section id="images of Aarons applications">  
-      <div id="work" class="container">
-        <div class= "side-title">
-          <h2>
-            Work
-          </h2>
-        </div>
-        <div class="info">
-          <div class="premoted-project">
-            <a href="https://awiebe2021.github.io/run-buddy/">
-              <img src="assets/images/run-buddy.png" alt="screenshot of Run-Buddy"width="618px" height=auto>
-            </a>
-            <div class="img-title">
-              <h3>Run Buddy</h3>
-              <h4>HTML / CSS</h4> 
-            </div>
-          </div>
 
-          <div class="premoted-project">
-            <a href="https://awiebe2021.github.io/project_1/">
-              <img src="assets/images/camp-buddy.png" alt="screenshot of Camp Buddy" width="618px" height=auto>
-            </a>
-            <div class="img-title">
-              <h3>Camp Buddy</h3>
-              <h4>HTML / API's</h4> 
-            </div>
-          </div>
-          <div class="premoted-project">
-            <a href="https://s-hound.herokuapp.com/">
-              <img src="assets/images/shound.png" alt="screenshot of Slooth Hound" width="618px" height=auto>
-            </a>
-            <div class="img-title">
-              <h3>Slooth Hound</h3>
-              <h4>Full Stack App</h4> 
-            </div>
-          </div>
+      <div class="box">
+          <span>29+</span>
+          <h3>years employeed in the tech industry</h3>
+      </div>
 
-          <div class="secondary-project" style="padding: 10px;">
-            <a>
-              <video width="618px" height=auto controls>
-                <source src="assets\file\video-77636.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-            </a>
-            <div class="img-title">
-              <h3>MiTek 20/20</h3>
-              <h4>C++ / SQL</h4> 
-            </div>
-          </div>
-        </div>
-        <!-- area for future projects -->
+      <div class="box">
+          <span>70+</span>
+          <h3>endorsements on LinkedIn</h3>
       </div>
-    </section>
-    <section id="contact info">  
-      <div id="contact-me" class="container">
-        <div class= "side-title">
-          <h2>
-            Contact<br>
-            Me
-          </h2>
-        </div>
-        <div id="contact-me-info" class="info">
-          <ul>
-            <li>
-              <a>623-980-5933</a>
-            </li>
-            <li>
-              <a>awiebe1@cox.net</a>
-            </li>
-            <li>
-              <a href="www.linkedin.com/in/aaron-wiebe-29233476">Linkedin</a>
-            </li>
-          </ul>
-          </div>
+
+      <div class="box">
+          <span>4+</span>
+          <h3>years served in military</h3>
       </div>
-    </section>
-    <!-- content end -->
+
+  </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> my <span>education</span> </h1>
+
+<div class="box-container">
+
+  <div class="box">
+      <i class="fas fa-certificate"></i>
+      <span>1980</span>
+      <h3>Basic langauge</h3>
+      <p>This course is designed to introduce you to computers and computer programming languages. You will learn the history of computers, how to operate the TRS-80, and how to write simple programs in BASIC and LOGO </p>
+  </div>
+
+  <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>1985</span>
+      <h3>Computer Science - No Degree Attained</h3>
+      <p>The University of Idaho’s Department of Computer Science programs examine the field not solely in a vacuum of theories. Instead, thier programs explore the ways computing and algorithmic thinking influence and intersect with other scientific and technical disciplines.</p>
+  </div>
+
+  <div class="box">
+      <i class="fas fa-fighter-jet"></i>
+      <span>1986</span>
+      <h3>United States Air Force - Honorably Discharged</h3>
+      <p>Overview: Military intelligence involves the processing and converting of raw data from various sources into useable intelligence information. All Source Intelligence Analysts receive, analyze, report and disseminate this information that is critical to the success of any mission. They also provide intelligence training to aircrews and conduct debriefings of military personnel involved in combat operations. </p>
+  </div>
+
+  <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>1991</span>
+      <h3>Computer Aided Design and Drafting - AAS</h3>
+      <p>This program exposes students to a variety of fundamental skills utilized in entry-level computer-aided drafting (CAD) and design positions. Students use CAD technologies and conventional drafting methods to produce various designs, working drawings, charts, forms and records. Students will be exposed to both classroom theory and laboratory projects.</p>
+  </div>
+
+  <div class="box">
+      <i class="fas fa-certificate"></i>
+      <span>1993</span>
+      <h3>AutoCad Developement System - Certificate</h3>
+      <p>ADS is an  application programming interface  that allows binary executable programs written in C or C++, compiled with industry-standard compilers, to communicate at run-time with the AutoCAD drawing editor.</p>
+  </div>
+
+  <div class="box">
+      <i class="fas fa-certificate"></i>
+      <span>2021</span>
+      <h3>UofA Full Stack Development Bootcamp</h3>
+      <p>This is a rigorous and fast-paced boot camp that focuses on the practical technical skills needed to build robust web applications. Throughout the course, you will gain proficiency in numerous marketable technologies, including
+          JavaScript, Node, SQL, MongoDB, React, and more.</p>
+  </div>
+
+</div>
+
+</section>
+
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> my <span>portfolio</span> </h1>
+
+<div class="box-container">
+
+  <div class="box">
+    <a href="https://awiebe2021.github.io/run-buddy/">
+      <img src="images/img1.png" alt="screenshot of Run-Buddy"width="618px" height=auto>
+    </a>
+    <div class="img-title">
+      <h3>Run Buddy</h3>
+      <h4>HTML / CSS</h4> 
+    </div>
+  </div>
+
+  <div class="box">
+    <a href="https://awiebe2021.github.io/project_1/">
+      <img src="images/img2.png" alt="screenshot of Camp Buddy" width="618px" height=auto>
+    </a>
+    <div class="img-title">
+      <h3>Camp Buddy</h3>
+      <h4>HTML / API's</h4> 
+    </div>
+  </div>
+
+  <div class="box">
+    <a>
+      <video width="618px" height=auto controls>
+        <source src="images\img3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </a>
+    <div class="img-title">
+      <h3>MiTek 20/20</h3>
+      <h4>C++ / SQL</h4> 
+    </div>
+  </div>
+
+  <div class="box">
+    <a href="https://afternoon-chamber-70504.herokuapp.com/">
+      <img src="images/img4.png" alt="screenshot of Tech Blog" width="618px" height=auto>
+    </a>
+    <div class="img-title">
+      <h3>Camp Buddy</h3>
+      <h4>HTML / API's</h4> 
+    </div>
+  </div>
+
+  <div class="box">
+    <a href="https://awiebe2021.github.io/project_1/">
+      <img src="images/img5.png" alt="screenshot of Camp Buddy" width="618px" height=auto>
+    </a>
+    <div class="img-title">
+      <h3>Camp Buddy</h3>
+      <h4>HTML / API's</h4> 
+    </div>
+  </div>
+
+  <div class="box">
+    <a href="https://AWiebe2021.github.io/Weather-Dashboard/">
+      <img src="images/img6.png" alt="screenshot of Weather Dashboard" width="618px" height=auto>
+    </a>
+    <div class="img-title">
+      <h3>Slooth Hound</h3>
+      <h4>Full Stack App</h4> 
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> me </h1>
+
+<div class="row">
+
+  <div class="content">
+
+      <h3 class="title">contact info</h3>
+
+      <div class="info">
+          <h3> <i class="fas fa-envelope"></i> awiebe2001@gmail.com </h3>
+          <h3> <i class="fas fa-phone"></i> 623-980-5933 </h3>
+          <h3> <i class="fas fa-map-marker-alt"></i> Gilbert, Arizona - 85295. </h3>
+      </div>
+
+  </div>
+
+  <form action="">
+
+      <input type="text" placeholder="name" class="box">
+      <input type="email" placeholder="email" class="box">
+      <input type="text" placeholder="project" class="box">
+      <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+      <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+  </form>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+  <img src="images/scroll-top-img.png" alt="">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
   </body>
 </html>
